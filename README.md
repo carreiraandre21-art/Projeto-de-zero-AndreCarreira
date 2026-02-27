@@ -1,5 +1,3 @@
-Claro! Aqui está o texto prontinho para você copiar e colar no seu arquivo README.md. Ele foi estruturado para mostrar que você é um desenvolvedor que se preocupa com organização e aprendizado contínuo:
-
 Projeto de Zero - AndreCarreira
 Este repositório registra a minha jornada de desenvolvimento de software partindo do absoluto zero até a construção de aplicações funcionais. O projeto foca em consolidar fundamentos de programação, estruturação de bancos de dados e o uso de ferramentas modernas de produtividade com IA.
 
