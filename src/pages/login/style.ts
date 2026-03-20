@@ -1,24 +1,196 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
-export const style = StyleSheet.create ( {
-
-    container :{
-        flex:1,
-        alignItems:"center",
-        justifyContent:"center"
+export const style = StyleSheet.create({
+    safeArea: {
+        flex: 1,
+        backgroundColor: "#F5EBDC",
     },
-    boxTop :{
-        height: 200,
-        backgroundColor:"red"
-        
+    background: {
+        ...StyleSheet.absoluteFillObject,
     },
-    boxMid : {
-        height: 200,
-        backgroundColor:"red"
+    blobLarge: {
+        position: "absolute",
+        top: -60,
+        right: -30,
+        width: 220,
+        height: 220,
+        borderRadius: 999,
+        backgroundColor: "#D97A58",
+        opacity: 0.22,
     },
-    botton : {
-        height: 200,
-        backgroundColor:"red"
-    }
-
-})
+    blobSmall: {
+        position: "absolute",
+        top: 120,
+        left: -40,
+        width: 150,
+        height: 150,
+        borderRadius: 999,
+        backgroundColor: "#1F4C43",
+        opacity: 0.14,
+    },
+    blobOutline: {
+        position: "absolute",
+        bottom: 90,
+        right: -70,
+        width: 220,
+        height: 220,
+        borderRadius: 999,
+        borderWidth: 28,
+        borderColor: "rgba(31, 76, 67, 0.10)",
+    },
+    container: {
+        flex: 1,
+    },
+    scrollContent: {
+        flexGrow: 1,
+    },
+    content: {
+        flexGrow: 1,
+        width: "100%",
+        justifyContent: "center",
+        paddingHorizontal: 24,
+        paddingVertical: 32,
+    },
+    hero: {
+        width: "100%",
+        maxWidth: 420,
+        alignSelf: "center",
+        marginBottom: 24,
+    },
+    logoWrap: {
+        width: 72,
+        height: 72,
+        borderRadius: 24,
+        overflow: "hidden",
+        marginBottom: 18,
+        borderWidth: 3,
+        borderColor: "rgba(255, 248, 241, 0.8)",
+        shadowColor: "#5F4334",
+        shadowOpacity: 0.12,
+        shadowRadius: 24,
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        elevation: 8,
+    },
+    logo: {
+        width: "100%",
+        height: "100%",
+    },
+    eyebrow: {
+        color: "#1F4C43",
+        fontSize: 12,
+        fontWeight: "700",
+        letterSpacing: 2,
+        textTransform: "uppercase",
+        marginBottom: 10,
+    },
+    title: {
+        color: "#2D2119",
+        fontSize: 38,
+        lineHeight: 42,
+        fontWeight: "700",
+        fontFamily: Platform.select({
+            ios: "Georgia",
+            android: "serif",
+            default: "serif",
+        }),
+        marginBottom: 10,
+    },
+    subtitle: {
+        color: "#6E5B4C",
+        fontSize: 16,
+        lineHeight: 24,
+        maxWidth: 320,
+    },
+    card: {
+        width: "100%",
+        maxWidth: 420,
+        alignSelf: "center",
+        backgroundColor: "#FFF8F1",
+        borderRadius: 28,
+        padding: 22,
+        borderWidth: 1,
+        borderColor: "rgba(45, 33, 25, 0.08)",
+        shadowColor: "#624C3D",
+        shadowOpacity: 0.16,
+        shadowRadius: 28,
+        shadowOffset: {
+            width: 0,
+            height: 14,
+        },
+        elevation: 10,
+    },
+    inputGroup: {
+        marginBottom: 18,
+    },
+    rowBetween: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginBottom: 8,
+        gap: 12,
+    },
+    label: {
+        color: "#3B2D24",
+        fontSize: 14,
+        fontWeight: "700",
+    },
+    inlineLink: {
+        color: "#D97A58",
+        fontSize: 13,
+        fontWeight: "700",
+    },
+    input: {
+        height: 54,
+        borderRadius: 18,
+        backgroundColor: "#F4E8DA",
+        borderWidth: 1,
+        borderColor: "rgba(31, 76, 67, 0.08)",
+        paddingHorizontal: 16,
+        color: "#2D2119",
+        fontSize: 15,
+    },
+    primaryButton: {
+        height: 56,
+        borderRadius: 18,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#1F4C43",
+        marginTop: 6,
+        marginBottom: 12,
+    },
+    primaryButtonText: {
+        color: "#FFF8F1",
+        fontSize: 16,
+        fontWeight: "800",
+        letterSpacing: 0.4,
+    },
+    secondaryButton: {
+        height: 54,
+        borderRadius: 18,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "transparent",
+        borderWidth: 1,
+        borderColor: "rgba(217, 122, 88, 0.35)",
+    },
+    secondaryButtonText: {
+        color: "#D97A58",
+        fontSize: 15,
+        fontWeight: "700",
+    },
+    footer: {
+        width: "100%",
+        maxWidth: 420,
+        alignSelf: "center",
+        marginTop: 18,
+        paddingHorizontal: 4,
+    },
+    footerText: {
+        color: "#806C5C",
+        fontSize: 13,
+        lineHeight: 18,
+    },
+});
